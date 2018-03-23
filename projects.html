@@ -6,14 +6,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Document</title>
-   <!-- <img src="temp.jpeg" alt="Image Not Found"> -->
 </head>
 <body>
         <div class="container">
-                <!-- <img class="logo" src="temp.jpeg" alt="Image Not Found"> -->
                         <h1 class="name">Luke Fraser</h1>
               </div>
-    <nav class="navbar bg-company-header navbar-expand-lg navbar-primary bg-light">
+    <nav class="navbar bg-company-header navbar-expand-lg navbar-dark bg-light">
             <a class="navbar-brand" href="index.html"><img  class = "logo"src="logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,23 +33,72 @@
           </nav>
           <div class="container">
               <div class="row whateveryouwanttocallit">
-                <div class="col-sm">
+                <div class="col-6">
                         <div id="stage">
                                 <div class="spinner">
-                                    <div class="face1"><img class="boxpic" src="warriors.png"></div>
-                                    <div class="face2">Restaraunt Manager</div>
-                                    <div class="face3">Banking App</div>
-                                    <div class="face4">Block Mover</div>
-                                    <div class="face5">Cubermite</div>
-                                    <div class="face6">Beer Game</div>
+                                    <div class="face1"><img class="boxpic" src="wwtest.png"></div>
+                                    <div class="face2"><img class="boxpic" src="rmanager.png"></div>
+                                    <div class="face3"><img class="boxpic" src="bank.png"></div>
+                                    <div class="face4"><img class="boxpic" src="bmover.png"></div>
+                                    <div class="face5"><img class="boxpic" src="rrr.png"></div>
+                                    <div class="face6"><img class="boxpic" src="beergame.png"></div>
                                 </div> 
                             </div>
-          <div class="col-sm">
-
+                            </div>
+          <div class="col-6">
+          <!-- Tab links -->
+<div class="tab">
+        <a href="https://github.com/mrmimosizer"><button>Github</button></a>
+        <button class="tablinks" onclick="openCity(event, 'ww')">Wonky Warriors</button>
+        <button class="tablinks" onclick="openCity(event, 'ba')">Bank App</button>
+        <button class="tablinks" onclick="openCity(event, 'rm')">Restaraunt Manager</button>
+      </div>
+      
+      <!-- Tab content -->
+      <div id="ww" class="tabcontent">
+        <h3>Wonky Warriors</h3>
+        <p>Wonky Warriors is a third person shooter with a heavy emphasis on ragdoll physics. This project was designed using unity with a team of 4 for my bachelor of game designs major project.</p>
+        <p>Project Duration: 8 Months</p>
+      </div>
+      
+      <div id="ba" class="tabcontent">
+        <h3>Bank App</h3>
+        <p>My bank app was a challenge to developed a ruby terminal app that would manage online commerce and save money seperatley to a file.</p>
+        <p>Project Duration: 1.5 Weeks</p> 
+      </div>
+      
+      <div id="rm" class="tabcontent">
+        <h3>Restaraunt Manager</h3>
+        <p>Restaraunt manager was an assignment to develop a useful ruby terminal app. It manages everything from assigning staff to tables, to managing in service tasks.</p>
+        <p>Project Duration: 3 Days</p>
+      </div>
                     </div> 
               </div>
 
           </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <script>
+          function openCity(evt, cityName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+            
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+            
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+            
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }</script>
 </body>
 <footer>
         <nav class="navbar bg-company-header navbar-expand-lg navbar-light bg-light">

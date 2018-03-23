@@ -28,17 +28,15 @@ svg {
 /* Rotating Cube*/
 
 .whateveryouwanttocallit {
-    width: 120px; 
-    height: 200px;
-    margin-top: 50px;
-    margin-bottom: 520px;
-    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 275px;
+    margin-left: 200px;
 }
 
 .spinner div {
-    /*position: absolute; */
-    width: 120px;
-    height: 120px;
+    position: absolute;
+    width: 240px;
+    height: 240px;
     border: 1px solid #ccc;
     background: rgba(255,255,255,0.8);
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
@@ -48,34 +46,35 @@ svg {
 }
 
 .spinner .face1 { 
-    -webkit-transform: translateZ(60px);
-    -ms-transform: translateZ(60px);
-    transform: translateZ(60px);
+    -webkit-transform: translateZ(120px);
+    -ms-transform: translateZ(120px);
+    transform: translateZ(120px);
+    /*transform: translateZ(60px);*/
 }
 .spinner .face2 { 
-    -webkit-transform: rotateY(90deg) translateZ(60px); 
-    -ms-transform: rotateY(90deg) translateZ(60px); 
-    transform: rotateY(90deg) translateZ(60px); 
+    -webkit-transform: rotateY(90deg) translateZ(120px); 
+    -ms-transform: rotateY(90deg) translateZ(120px); 
+    transform: rotateY(90deg) translateZ(120px); 
 }
 .spinner .face3 { 
-    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
-    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
-    transform: rotateY(90deg) rotateX(90deg) translateZ(60px); 
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(120px); 
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(120px); 
+    transform: rotateY(90deg) rotateX(90deg) translateZ(120px); 
 }
 .spinner .face4 { 
-    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
-    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px); 
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(120px); 
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(120px); 
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(120px); 
 }
 .spinner .face5 { 
-    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
-    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px); 
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px); 
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px); 
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px); 
 }
 .spinner .face6 { 
-    -webkit-transform: rotateX(-90deg) translateZ(60px); 
-    -ms-transform: rotateX(-90deg) translateZ(60px); 
-    transform: rotateX(-90deg) translateZ(60px); 
+    -webkit-transform: rotateX(-90deg) translateZ(120px); 
+    -ms-transform: rotateX(-90deg) translateZ(120px); 
+    transform: rotateX(-90deg) translateZ(120px); 
 }
 
 .spinner {
@@ -109,54 +108,85 @@ svg {
     max-height: 200%;
 }
 
-/*Vertical Sidebar*/
-*{padding:0;margin:0;}
-body{font:16px/1 sans-serif}
-
-
 /*VERTICAL MENU*/
-nav.vertical{
-  position:relative;
-  width:200px;
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
-/* ALL UL */
-nav.vertical ul{
-  list-style: none;
-}
-/* ALL LI */
-nav.vertical li{
-  position:relative;
-}
-/* ALL A */
-nav.vertical a{
-  display:block;
-  color:#eee;
-  text-decoration:none;
-  padding:10px 15px;
-  background:#667;
-  transition:0.2s;
-}
-/* ALL A HOVER */
-nav.vertical li:hover > a{
-  background:#778;
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
 }
 
-/* INNER UL HIDE */
-nav.vertical ul ul{
-  position:absolute;
-  left:0%;
-  top:0;
-  width:100%;
-  visibility:hidden;
-  opacity:0;
-  transition: transform 0.2s;
-  transform: translateX(50px);
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
 }
-/* INNER UL SHOW */
-nav.vertical li:hover > ul{
-  left:100%;
-  visibility:visible;
-  opacity:1;
-  transform: translateX(0px);
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ddd;
+}
+
+.tab1 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab1 button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tab1content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ddd;
+}
+
+.fltleft {
+    width: 25%;
+    float: left;
+}
+.fltright {
+    width: 25%;
+    float: right;
 }

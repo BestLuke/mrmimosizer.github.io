@@ -1,3 +1,4 @@
+
 body {
     background-image: linear-gradient(to bottom, #0acffe 0%, #495aff 100%) ;
     background-repeat: no repeat;
@@ -190,3 +191,20 @@ svg {
     width: 25%;
     float: right;
 }
+
+
+/* @media (min-width: 300px) {
+    svg {
+        height: 82px;
+        width: 82px;
+    }
+    .footersvg {
+        max-height: 62px;
+        max-width: 62px;
+    } 
+    
+}
+*/
+ /* .navbar-collapse.collapse.in {
+    display: inline-block !important;
+}  */

@@ -1,4 +1,8 @@
 
+.navbar-nav > li{
+    padding-left:100px;
+    padding-right:100px;
+  }
 body {
     background-image: linear-gradient(to bottom, #0acffe 0%, #495aff 100%) ;
     background-repeat: no repeat;
@@ -205,6 +209,6 @@ svg {
     
 } */
 
- /* .navbar-collapse.collapse.in {
+ .navbar-collapse.collapse.in {
     display: inline-block !important;
-}  */
+} 
